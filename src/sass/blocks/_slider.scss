@@ -1,0 +1,105 @@
+
+/* Собственно сам слайдер */
+.slider{
+	width: 1294px;
+	position: relative;
+	margin: 0 auto;
+	height: 550px;
+	background: $bg-color;
+	border-radius: 32px;
+	&__item {
+		&-descr {
+			width: 588px;
+			margin: 145px 0 0 56px;
+		}
+		&-text {
+			font-size: 16px;
+			line-height: 19px;
+			margin-top: 19px;
+			margin-bottom: 0;
+			
+		}
+		&-img {
+			width: 647px;
+			height: 550px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-height: 550px;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.slider .prev, .slider .next {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.slider .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Кружочки */
+.slider__dots {
+	position: absolute;
+	bottom: 34px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 650px;
+	display: flex;
+	justify-content: space-between;
+}
+.slider__dots_item{
+	cursor: pointer;
+	height: 2px;
+	width: 194px;
+	background-color: #000;
+	border-radius: 50%;
+	transition: background-color 0.6s ease;
+	text-decoration: none;
+}
+.active,
+.slider__dots_item:hover {
+	background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider__item {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}

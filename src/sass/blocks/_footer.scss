@@ -1,0 +1,48 @@
+.footer {
+	margin-top: 20px;
+	padding-top: 44px;
+	background: #F8F9FA;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #DCE5E2;
+		padding-bottom: 79px;
+		
+	}
+	&__logo {
+		width: 394px;
+		&-descr {
+			width: 304px;
+			margin-top: 18px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+	&__list {
+		width: 197px;
+		li {
+			list-style: none;
+			a {
+				font-size: 17px;
+				color: #000000;
+			}
+		}
+	}
+	&__categories {
+		font-family: 'Readex Pro';
+		font-size: 22px;
+		line-height: 28px;
+	}
+	&__copyright {
+		text-align: center;
+		font-family: 'Readex Pro';
+		padding-top: 52px;
+		font-size: 18px;
+		a {
+			font-size: 18px;
+			line-height: 22px;
+			color: #000;
+		}
+	}
+}

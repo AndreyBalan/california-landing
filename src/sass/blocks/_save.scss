@@ -1,0 +1,31 @@
+.save {
+	margin-top: 100px;
+	&__wrapper {
+		margin-top: 31px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 303px;
+		text-align: left;
+		img {
+			margin: 0 auto;
+			display: block;
+		}
+		&-title {
+			margin-top: 37px;
+			font-size: 22px;
+		}
+		&-descr {
+			margin-top: 9px;
+			padding-right: 42px;
+			font-size: 14px;
+			line-height: 17px;
+			color: #4B4B4B;
+		}
+		&-price {
+			margin-top: 25px;
+			font-size: 18px;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.header {
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	&__logo {
+		width: 170px;
+	}
+	&__nav {
+		width: 450px;
+		ul {
+			display: flex;
+			justify-content: space-between;
+		}
+		li {
+			display: inline;
+			a {
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #000000;
+			}
+		}
+	}
+	&__icons {
+		width: 110px;
+		display: flex;
+		justify-content: space-around;
+		cursor: pointer;
+	}
+}

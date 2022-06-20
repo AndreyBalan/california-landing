@@ -1,0 +1,32 @@
+.best {
+	margin-top: 47px;
+	&__wrapper {
+		margin-top: 56px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 413px;
+		height: 453px;
+		background: #F8F9FA;
+		text-align: center;
+		padding-top: 41px;
+		border-radius: 16px;
+		&-subtitle {
+			font-family: 'Readex Pro';
+			font-size: 13px;
+			line-height: 17px;
+		}
+		&-title {
+			font-family: 'Readex Pro';
+			font-size: 28px;
+			line-height: 35px;
+		}
+		&-btn {
+			margin-top: 30px;
+		}
+		img {
+			margin-top: 30px;
+		}
+	}
+}

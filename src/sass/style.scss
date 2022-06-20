@@ -1,0 +1,30 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/slider';
+@import 'blocks/title';
+@import 'blocks/categories';
+@import 'blocks/save';
+@import 'blocks/best';
+@import 'blocks/button';
+@import 'blocks/ideas';
+@import 'blocks/else';
+@import 'blocks/signup';
+@import 'blocks/footer';
